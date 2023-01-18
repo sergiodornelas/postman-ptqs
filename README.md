@@ -13,7 +13,7 @@
 
 3. Integrar os recursos disponíveis do Swagger no Postman.
 
-4. Criar as requisições: **_GET, POST, PUT, DELETE._** 
+4. Criar/enviar as requisições: **_GET, POST, PUT, DELETE._** 
 
 ***
 <img align="right" alt="jr-pic" height="200" style="border-radius:50px;" src="https://user-images.githubusercontent.com/110427773/194069922-0be25680-1468-4d28-8b93-3777447d2b04.PNG">
