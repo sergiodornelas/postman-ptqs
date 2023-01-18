@@ -7,7 +7,7 @@
 ***
 ### _Etapas para reproduzir:_ 
 
-1. Salvar o arquivo .yml da API-REST: http://165.227.93.41/lojinha/lojinha-v2.yml
+1. Salvar o arquivo .yml da API-REST na área de trabalho: http://165.227.93.41/lojinha/lojinha-v2.yml
 
 2. Importar o arquivo .yml no Swagger editor.
 
