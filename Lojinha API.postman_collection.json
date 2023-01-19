@@ -96,6 +96,39 @@
 			"response": []
 		},
 		{
+			"name": "Adicionar produto 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxNTY2NCIsInVzdWFyaW9sb2dpbiI6InNlcmdpb25vcHRxcyIsInVzdWFyaW9ub21lIjoiU2VyZ2lvIG5vIFBUUVMifQ.FNIhwNkwhOUn-TeGNjAWvOSoPF2LCHnotrunbjN3iPU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"produtoNome\": \"Bola de futebol\",\r\n  \"produtoValor\": 100.00,\r\n  \"produtoCores\": [\r\n    \"azul\"\r\n  ],\r\n  \"produtoUrlMock\": \"string\",\r\n  \"componentes\": [\r\n    {\r\n      \"componenteNome\": \"Reparo para furos\",\r\n      \"componenteQuantidade\": 2\r\n    }\r\n  ]\r\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/v2/produtos",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"v2",
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Alterar um produto existente",
 			"request": {
 				"method": "PUT",
@@ -113,17 +146,17 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"produtoNome\": \"Super nintendo\",\r\n  \"produtoValor\": 400.99,\r\n  \"produtoCores\": [\r\n    \"preto\", \"branco\"\r\n  ],\r\n  \"produtoUrlMock\": \"string\",\r\n  \"componentes\": [\r\n    {\r\n      \"componenteNome\": \"Controle\",\r\n      \"componenteQuantidade\": 2\r\n    },\r\n    {\r\n\"componenteNome\": \"Jogo de aventura\",\r\n      \"componenteQuantidade\": 1\r\n\r\n    }\r\n\r\n\r\n  ]\r\n}"
+					"raw": "{\r\n  \"produtoNome\": \"Super nintendo\",\r\n  \"produtoValor\": 400.99,\r\n  \"produtoCores\": [\r\n    \"preto\", \"branco\"\r\n  ],\r\n  \"produtoUrlMock\": \"string\",\r\n  \"componentes\": [\r\n    {\r\n      \"componenteNome\": \"Controle\",\r\n      \"componenteQuantidade\": 2\r\n    },\r\n    {\r\n\"componenteNome\": \"Jogo do mario\",\r\n      \"componenteQuantidade\": 1\r\n\r\n    }\r\n\r\n\r\n  ]\r\n}"
 				},
 				"url": {
-					"raw": "{{base_url}}/v2/produtos/149029",
+					"raw": "{{base_url}}/v2/produtos/149037",
 					"host": [
 						"{{base_url}}"
 					],
 					"path": [
 						"v2",
 						"produtos",
-						"149029"
+						"149037"
 					]
 				}
 			},
@@ -154,32 +187,6 @@
 			"response": []
 		},
 		{
-			"name": "Buscar componentes de um produto",
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "token",
-						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxNTY2NCIsInVzdWFyaW9sb2dpbiI6InNlcmdpb25vcHRxcyIsInVzdWFyaW9ub21lIjoiU2VyZ2lvIG5vIFBUUVMifQ.FNIhwNkwhOUn-TeGNjAWvOSoPF2LCHnotrunbjN3iPU",
-						"type": "text"
-					}
-				],
-				"url": {
-					"raw": "{{base_url}}/v2/produtos/149037/componentes",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"v2",
-						"produtos",
-						"149037",
-						"componentes"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "Buscar 1 produto",
 			"request": {
 				"method": "GET",
@@ -191,14 +198,14 @@
 					}
 				],
 				"url": {
-					"raw": "{{base_url}}/v2/produtos/148984",
+					"raw": "{{base_url}}/v2/produtos/149128",
 					"host": [
 						"{{base_url}}"
 					],
 					"path": [
 						"v2",
 						"produtos",
-						"148984"
+						"149128"
 					]
 				}
 			},
@@ -216,7 +223,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{base_url}}/v2/produtos?produtoNome=PlayStation",
+					"raw": "{{base_url}}/v2/produtos?produtoNome=b",
 					"host": [
 						"{{base_url}}"
 					],
@@ -227,7 +234,7 @@
 					"query": [
 						{
 							"key": "produtoNome",
-							"value": "PlayStation"
+							"value": "b"
 						}
 					]
 				}
@@ -246,14 +253,14 @@
 					}
 				],
 				"url": {
-					"raw": "{{base_url}}/v2/produtos/149029",
+					"raw": "{{base_url}}/v2/produtos/149077",
 					"host": [
 						"{{base_url}}"
 					],
 					"path": [
 						"v2",
 						"produtos",
-						"149029"
+						"149077"
 					]
 				}
 			},
